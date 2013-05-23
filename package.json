@@ -1,8 +1,11 @@
 {
-	"name": "grays",
-	"version": "0.0.0",
+	"name": "matty",
+	"version": "0.1.0",
 	"description": "fetch MLB gameday data",
-	"main": "lib/grays.js",
+	"bin": {
+		"matty": "bin/matty"
+	},
+	"main": "lib/matty.js",
 	"author": "Dave Pacheco <dap@cs.brown.edu>",
 	"license": "BSD",
 	"dependencies": {

@@ -1,13 +1,17 @@
 #!/usr/bin/env node
 // vim: ft=javascript
 
+/*
+ * matty: MLB Gameday website crawler.
+ */
+
 var mod_extsprintf = require('extsprintf');
 var mod_fs = require('fs');
 var mod_path = require('path');
 
 var mod_bunyan = require('bunyan');
 
-var mod_grays = require('../lib/grays');
+var mod_matty = require('../lib/matty');
 
 var sprintf = mod_extsprintf.sprintf;
 var gArg0 = mod_path.basename(process.argv[1]);
@@ -20,14 +24,14 @@ function main()
 	var log, conf, crawler;
 
 	log = new mod_bunyan({
-	    'name': 'grays',
+	    'name': 'matty',
 	    'level': process.env['LOG_LEVEL'] || 'info',
 	    'serializers': {} /* XXX for restify */
 	});
 
 	try {
 		conf = JSON.parse(mod_fs.readFileSync(process.argv[2]));
-		crawler = mod_grays.createCrawler(conf, log);
+		crawler = mod_matty.createCrawler(conf, log);
 	} catch (ex) {
 		console.log(ex.stack);
 		fatal('failed: %s', ex.message);
