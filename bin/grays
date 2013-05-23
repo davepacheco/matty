@@ -40,7 +40,8 @@ function main()
 	});
 
 	crawler.on('end', function () {
-		console.log('Finished crawl.');
+		console.log('Finished crawl (%d requests)',
+		    crawler.stats()['nrequests']);
 	});
 
 	crawler.on('directory', function (name) {

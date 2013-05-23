@@ -1,5 +1,16 @@
 {
 	"server": "http://gd2.mlb.com",
 	"root": "/components/game/mlb",
-	"concurrency": 1
+	"concurrency": 1,
+	"file_match": [
+	    "gid_[^/]*/inning/",
+	    "gid_[^/]*/boxscore\\.",
+	    "gid_[^/]*/game\\.",
+	    "gid_[^/]*/linescore\\.",
+	    "gid_[^/]*/players\\.",
+	    "gid_[^/]*/plays\\."
+	],
+	"match_all": [
+		"_sfnmlb_"
+	]
 }
