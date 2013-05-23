@@ -1,0 +1,5 @@
+{
+	"server": "http://gd2.mlb.com",
+	"root": "/components/game/mlb",
+	"concurrency": 1
+}
