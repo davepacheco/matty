@@ -10,7 +10,5 @@
 	    "gid_[^/]*/players\\.",
 	    "gid_[^/]*/plays\\."
 	],
-	"match_all": [
-		"_sfnmlb_"
-	]
+	"match_all": []
 }

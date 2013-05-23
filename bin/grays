@@ -40,12 +40,13 @@ function main()
 	});
 
 	crawler.on('end', function () {
-		console.log('Finished crawl (%d requests)',
-		    crawler.stats()['nrequests']);
+		var stats = crawler.stats();
+		console.log('Finished crawl (%d requests, %d ms)',
+		    stats['nrequests'], stats['time']);
 	});
 
 	crawler.on('directory', function (name) {
-		console.log('dir  %s', name);
+		console.log('  %s', name);
 	});
 }
 
