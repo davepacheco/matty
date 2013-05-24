@@ -3,6 +3,8 @@
 	"root": "/components/game/mlb",
 	"concurrency": 1,
 	"file_match": [
+	    "gid_[^/]*/batters/",
+	    "gid_[^/]*/pitchers/",
 	    "gid_[^/]*/inning/",
 	    "gid_[^/]*/boxscore\\.",
 	    "gid_[^/]*/game\\.",

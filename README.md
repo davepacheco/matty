@@ -5,8 +5,8 @@ site.  Both the command-line tool and library are unstable -- they're continuing
 to evolve with no intention of maintaining compatibility.
 
 There are a number of other tools for collecting this data, most based on
-"hack\_28\_spider.pl".  Matty exists because I found the performance and
-robustness wanting in the existing tools.
+"hack\_28\_spider.pl".  I wrote this one because I found it annoying to deal
+with the configuration, performance, and robustness issues with these tools.
 
 **matty is not created or approved by MLB.  Crawlers can have a significant
 performance impact on servers.  Use responsibly, and at your own risk.**
